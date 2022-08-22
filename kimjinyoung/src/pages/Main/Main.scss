@@ -1,0 +1,140 @@
+$borderStyle: 1px solid rgb(219, 219, 219);
+
+.bold {
+  font-weight: bold;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.none {
+  display: none;
+}
+
+// section //
+
+#section {
+  flex-direction: column;
+  padding-bottom: 20px;
+  background-color: rgb(250, 250, 250);
+
+  .article {
+    flex-direction: column;
+    width: 450px;
+    margin: 20px 0 0 0;
+
+    background-color: white;
+    border-radius: 8px;
+    border: $borderStyle;
+  }
+
+  .article:nth-of-type(1) {
+    margin-top: 77px;
+  }
+
+  .articleTop {
+    justify-content: space-between;
+    width: 430px;
+    margin: 10px;
+  }
+
+  .articleProfile {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+  }
+
+  .articleIdTop {
+    margin-left: 15px;
+  }
+
+  .articleMore {
+    height: 17.5px;
+  }
+
+  .articleImg {
+    width: 100%;
+  }
+
+  .articleMiddle {
+    justify-content: space-between;
+    width: 430px;
+    margin: 10px;
+  }
+
+  .articleHeart,
+  .articleChat,
+  .articleShare {
+    height: 25px;
+    margin-right: 12px;
+  }
+
+  .articleBookmark {
+    height: 25px;
+  }
+
+  .writer {
+    word-break: break-all;
+  }
+
+  .chatBox {
+    width: 430px;
+    margin: 0 10px 5px 10px;
+    font-size: 14px;
+  }
+
+  .comment {
+    word-break: break-all;
+  }
+
+  .like {
+    margin-bottom: 18px;
+  }
+
+  .commentWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+  }
+
+  .commentHeart {
+    height: 14px;
+  }
+
+  .commentInputWrapper {
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    border-top: $borderStyle;
+  }
+
+  .commentInputBox {
+    width: 400px;
+    height: 44px;
+  }
+
+  .commentInput {
+    width: 380px;
+    height: 23px;
+    margin: 10px;
+    border: none;
+    font-size: 15px;
+  }
+
+  .commentBtn {
+    height: 40px;
+    width: 50px;
+    border: none;
+    background-color: white;
+    color: rgb(74, 149, 246);
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .commentInput:focus {
+    outline: none;
+  }
+}

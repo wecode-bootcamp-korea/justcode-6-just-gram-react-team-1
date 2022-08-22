@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "articleProfile": "img/me.jpg",
+    "articleId": "rlawlsdud",
+    "articleImg": "img/me2.jpg",
+    "liker": "justcode_bootcamp",
+    "likers": "1,234,567",
+    "isLiked": false,
+    "articleText": "hihi"
+  },
+  {
+    "id": 2,
+    "articleProfile": "./img/me.jpg",
+    "articleId": "rlawlsyoung",
+    "articleImg": "./img/seoul.jpg",
+    "liker": "justcode_bootcamp",
+    "likers": "4,237",
+    "isLiked": false,
+    "articleText": "서울 야경"
+  },
+  {
+    "id": 3,
+    "articleProfile": "./img/gold.jpg",
+    "articleId": "19990826",
+    "articleImg": "./img/mv.jpg",
+    "liker": "justcode_bootcamp",
+    "likers": "10,143",
+    "isLiked": false,
+    "articleText": "ok"
+  }
+]
