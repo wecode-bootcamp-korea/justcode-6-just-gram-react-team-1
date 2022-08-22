@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.Login{
+.container {
+    border: 1px solid black;
+  }
+  
+  .container_height {
+    height: 100%;
+  }
+  .flex_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-style {
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+  
+  .login-container {
+    width: 400px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: white;
+  }
+  .input_style {
+    width: 310px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #dfe0e362;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-left: 20px
+  }
+  
+  .button_style {
+    width: 340px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #aeddf3;
+    cursor: not-allowed;
+  }
+  
+  .forget {
+    text-decoration: none;
+    color: rgb(45, 44, 117);
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+}
