@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "username": "poy.lib",
+    "feedpicture": "image/feed1.jpg",
+    "writerprofile": "image/Profile.jpg",
+    "feedcontent" : "게시글 내용",
+    "like": 14,
+    "commentlist" : [
+      {"id" : 1, "name":"codelike","comment":"피드 댓글 리스트 1"},
+      {"id" : 2, "name":"code","comment":"second"},
+      {"id" : 3, "name":"cmt","comment":"third"}
+    ]
+  },
+    {
+      "id": 2,
+      "username": "second_post",
+      "feedpicture": "image/feed2.jpg",
+      "writerprofile": "image/Profile.jpg",
+      "feedcontent" : "게시글 내용",
+      "like": 26,
+      "commentlist": [
+        { "id" : 1, "name": "codelike", "comment": "피드 댓글 리스트 2" },
+        { "id" : 2, "name": "commmmmenter", "comment": "second" },
+        { "id" : 3, "name": "cmttttt", "comment": "third" },
+        { "id": 4, "name": "cmt", "comment": "댓글" }
+      ]
+    },
+      {
+        "id": 3,
+        "username": "omok_baksa",
+        "feedpicture": "image/feed4.png",
+        "writerprofile": "image/profile3.png",
+        "feedcontent" : "훈훈하네요",
+        "like": 2543534,
+        "commentlist": [
+          { "id" : 1, "name": "5mok_nun2", "comment": "재송..." },
+          { "id" : 2, "name": "commmmmenter", "comment": "cool" } 
+        ]
+      }
+]

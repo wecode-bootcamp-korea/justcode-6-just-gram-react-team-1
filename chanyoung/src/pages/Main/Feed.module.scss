@@ -1,0 +1,87 @@
+article {
+  background-color: white;
+  border: 1px solid #EFEFEF;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  height: fit-content;
+  margin-bottom: 15px;
+}
+.feedHead {
+  font-weight: bold;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    .profile {
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      height: 40px;
+      img {
+        margin-right: 5px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      a {
+        color: black;
+      }
+    }
+    img {
+      width: 30px;
+      margin-right: 5px ;
+    }
+
+}
+.feedBody {
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+  }
+}
+.feedMenu {
+  margin-top: 5px;
+  height: 40px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: 30px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.feedComment {
+  
+  line-height: 20px;
+  font-size: 14px;
+  padding:3px 8px;
+  height:fit-content;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  div {
+    margin-top: 2px;
+  }
+  a{
+    font-weight: bold;
+    color: black;
+    margin-right: 3px;
+  }
+}
+.feedWrite {
+  border-top: 1px solid #EFEFEF;
+  padding: 10px 8px;
+  margin-top: 5px;
+  input {
+    width: 90%;
+     height: 20px;
+  }
+  button {
+    color: #0096f6;
+  }
+}

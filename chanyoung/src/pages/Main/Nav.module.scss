@@ -1,0 +1,35 @@
+
+header {
+  display: flex;
+  padding: 0 10px;
+  width: 100%;
+  background-color: white;
+  height: 60px;
+  position: fixed;
+  justify-content: space-between;
+  a {
+    text-decoration: none;
+    color: black;
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    margin: 10px;
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    // justify-content: space-between;
+    img{
+        margin-top: 12px;
+        width: 30px;
+    }
+  }
+  input {
+    margin-top: 12px;
+    padding: 5px;
+    width: 30%;
+    height: 36px;
+    background-color: #EFEFEF;
+    font-size: 17px;
+  }
+}
