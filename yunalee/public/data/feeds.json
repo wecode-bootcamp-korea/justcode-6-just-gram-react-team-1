@@ -1,0 +1,59 @@
+{
+    "feedData":[
+        {
+            "feedId" : 1,
+            "userName" : "yoon_ina",
+            "userImg" : "https://mblogthumb-phinf.pstatic.net/MjAxOTA0MDZfMTgz/MDAxNTU0NDc3OTEzNzUw.2DR5ovS8scAd1VkKs3lQ-hZEePlh6TLqp3qvsSQMJnwg.r8NlsifRGIdfGWdlw7jxWIuRpgEoD33hoXGp-2ZDOz0g.JPEG.xvx404/1542459397151.jpg?type=w800",
+            "feedImages" : [
+                {
+                    "imageId" : 105,
+                    "imageUrl" : "https://images.unsplash.com/photo-1595124245030-41448b199d6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80"
+                },
+                {
+                    "imageId" :106,
+                    "imageUrl" :"https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80"
+                }
+            ],
+            "content" : "정말 맛있어보이네요! ",
+            "like" : "yoon 외 385명이 좋아합니다"
+
+        },
+        {
+            "feedId" : 2,
+            "userName" : "code_reve",
+            "userImg" :"https://mblogthumb-phinf.pstatic.net/MjAxOTA0MDZfMTk1/MDAxNTU0NDc2Njg3NDUy.089kJiam91Af7LfHnaWHF7lUXwUiyiaEJaBKHf2Odj4g.iU_6CgwmfSkDstaA5CUcctJFeuw0GlbPZiiBK9aMW64g.JPEG.xvx404/1535826348.jpg?type=w800",
+            "feedImages" : [
+                {
+                    "imageId" : 108,
+                    "imageUrl" : "https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=850&q=80"
+                },
+                {
+                    "imageId" :109,
+                    "imageUrl" : "https://images.unsplash.com/photo-1543722530-d2c3201371e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80"
+                }
+            ],
+            "content" : "신비로운 우주 ",
+            "like" : "reve_4412 외 125명이 좋아합니다"
+
+        },
+        {
+            "feedId" : 3,
+            "userName" : "code_kim",
+            "userImg" :"https://dnvefa72aowie.cloudfront.net/origin/article/202105/dd437e7c3f621579f4b27626acfd407028a2cd74d08ca858fd3e130039a5a818.webp?q=95&s=1440x1440&t=inside",
+            "feedImages" : [
+                {
+                    "imageId" : 111,
+                    "imageUrl" : "https://images.unsplash.com/photo-1513001900722-370f803f498d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                },
+                {
+                    "imageId" : 112,
+                    "imageUrl" : "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                }
+            ],
+            "content" : "가을은 독서의 계절 ",
+            "like" : "som_11 외 55명이 좋아합니다"
+
+        }
+        
+    ]
+}
