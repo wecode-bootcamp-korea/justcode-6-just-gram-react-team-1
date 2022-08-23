@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 function Feed() {
-  const [comment, setComment] = useState();
+  // const [comment, setComment] = useState();
   const [id, setId] = useState(1);
+  const value = useRef(); // 담을 값
   const [commentArray, setCommentArray] = useState([
     {
       id: 0,
@@ -15,8 +16,9 @@ function Feed() {
     setId(id + 1);
     const newComment = {
       id: id,
-      content: comment,
+      content: value.current.value, // 해당 태그의 value(값)
     };
+    value.current.value = '';
     setCommentArray([...commentArray, newComment]);
   };
 
@@ -88,9 +90,7 @@ function Feed() {
             className='write-comment-input'
             type='text'
             placeholder='댓글 달기...'
-            onChange={(e) => {
-              setComment(e.target.value);
-            }}
+            ref={value}
           />
           <button className='write-comment-btn' onClick={addComment}>
             게시
