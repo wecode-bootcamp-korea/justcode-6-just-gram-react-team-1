@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Main.scss';
 import Feed from './Feed';
 
 function Main() {
   const [feeds, setFeeds] = useState([]);
+  const [userInfo, setUserInfo] = useState();
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch('/data/feeds.json')
@@ -11,6 +14,20 @@ function Main() {
       .then((data) => {
         setFeeds(data.feedData);
       });
+  }, []);
+
+  useEffect(() => {
+    fetch('http://auth.jaejun.me:10010/me', {
+      method: 'GET',
+      headers: {
+        Authorization:
+          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE2NjEyNjIxNTUsImV4cCI6MTY2Mzk0MDU1NX0.SvIC9kvr9dhGxWhqEOBqdXbAicnxr_PdaZ4-1zKx36s',
+      },
+    })
+      .then((res) => res.json())
+      .then((data) =>
+        data.email !== undefined ? setUserInfo(data) : navigate('/')
+      );
   }, []);
 
   return (
@@ -42,11 +59,7 @@ function Main() {
             src='https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png'
             width='35px'
           />
-          <img
-            alt='마이'
-            src='https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png'
-            width='35px'
-          />
+          <p>{userInfo && userInfo.email}</p>
         </div>
       </nav>
 
