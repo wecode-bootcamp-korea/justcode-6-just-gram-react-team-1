@@ -1,9 +1,12 @@
 import React, { useState, useRef } from 'react';
+import Comment from './Comment';
 
 function Feed() {
   // const [comment, setComment] = useState();
   const [id, setId] = useState(1);
   const value = useRef(); // 담을 값
+  const [inputState, setInput] = useState('');
+
   const [commentArray, setCommentArray] = useState([
     {
       id: 0,
@@ -16,10 +19,18 @@ function Feed() {
     setId(id + 1);
     const newComment = {
       id: id,
-      content: value.current.value, // 해당 태그의 value(값)
+      content: inputState,
+      createdAt: new Date().toLocaleString(),
     };
-    value.current.value = '';
+    // value.current.value = '';
+    setInput('');
     setCommentArray([...commentArray, newComment]);
+  };
+
+  const onKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      addComment();
+    }
   };
 
   return (
@@ -80,7 +91,16 @@ function Feed() {
 
       <div className='feeds-comments'>
         {commentArray.map((comment) => {
-          return <li key={comment.id}>{comment.content}</li>;
+          return (
+            <li key={comment.id}>
+              <Comment
+                id={comment.id}
+                content={comment.content}
+                writer={'익명'}
+                createdAt={comment.createdAt || '2022-01-01'}
+              />
+            </li>
+          );
         })}
       </div>
       <div className='feed-time'>5분 전</div>
@@ -91,8 +111,14 @@ function Feed() {
             type='text'
             placeholder='댓글 달기...'
             ref={value}
+            value={inputState}
+            onChange={(e) => setInput(e.target.value)}
           />
-          <button className='write-comment-btn' onClick={addComment}>
+          <button
+            className='write-comment-btn'
+            onClick={addComment}
+            onKeyDown={onKeyDown}
+          >
             게시
           </button>
         </form>
