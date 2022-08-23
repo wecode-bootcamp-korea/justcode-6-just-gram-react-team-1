@@ -7,13 +7,27 @@ import Signup from "./pages/Signup/Signup";
 
 function Router() {
   const [token, setToken] = useState("");
+  const [isLogin, setIsLogin] = useState(false);
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Login setToken={setToken} />} />
+        <Route
+          path="/"
+          element={<Login setToken={setToken} setIsLogin={setIsLogin} />}
+        />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/main" element={<Main token={token} />} />
+        <Route
+          path="/main"
+          element={
+            <Main
+              token={token}
+              setToken={setToken}
+              isLogin={isLogin}
+              setIsLogin={setIsLogin}
+            />
+          }
+        />
       </Routes>
     </BrowserRouter>
   );

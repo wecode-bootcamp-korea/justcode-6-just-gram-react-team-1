@@ -6,9 +6,9 @@ import axios from "axios";
 function Signup() {
   const navigate = useNavigate();
 
-  let [active, setActive] = useState(false);
-  let [idValue, setIdValue] = useState("");
-  let [pwValue, setPwValue] = useState("");
+  const [active, setActive] = useState(false);
+  const [idValue, setIdValue] = useState("");
+  const [pwValue, setPwValue] = useState("");
 
   function activePassedLogin() {
     return idValue.includes("@") && pwValue.length >= 5

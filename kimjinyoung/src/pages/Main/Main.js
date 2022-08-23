@@ -6,7 +6,7 @@ import Article from "./Article";
 import Nav from "../Nav/Nav";
 
 function Main(props) {
-  const { token } = props;
+  const { token, setToken, isLogin, setIsLogin } = props;
 
   const [articles, setArticles] = useState([]);
   const [comments, setComments] = useState([]);
@@ -25,7 +25,12 @@ function Main(props) {
 
   return (
     <>
-      <Nav token={token} />
+      <Nav
+        token={token}
+        setToken={setToken}
+        isLogin={isLogin}
+        setIsLogin={setIsLogin}
+      />
       <section id="section" className="flexCenter">
         <Article
           articles={articles}

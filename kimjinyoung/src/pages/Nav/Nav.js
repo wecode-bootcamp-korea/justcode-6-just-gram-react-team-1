@@ -5,11 +5,10 @@ import axios from "axios";
 import "./Nav.scss";
 
 function ProfileMenu(props) {
-  const { token } = props;
+  const { token, setToken, isLogin, setIsLogin } = props;
   const navigate = useNavigate();
 
   function viewProfile() {
-    console.log(token);
     axios({
       method: "get",
       url: "http://auth.jaejun.me:10010/me",
@@ -22,9 +21,16 @@ function ProfileMenu(props) {
     });
   }
 
+  function moveToLogin(e) {
+    navigate("/");
+  }
+
   return (
     <div className="profileMenu">
-      <div className="profileMenuList flexCenter" onClick={viewProfile}>
+      <div
+        className="profileMenuList flexCenter"
+        onClick={isLogin ? viewProfile : moveToLogin}
+      >
         <img src="img/profile.png" alt="menuInfo" className="menuicons" />{" "}
         프로필
       </div>
@@ -51,6 +57,9 @@ function ProfileMenu(props) {
         onClick={(e) => {
           e.preventDefault();
           navigate("/");
+          localStorage.removeItem("token");
+          setToken("");
+          setIsLogin(false);
         }}
       >
         로그아웃
@@ -60,11 +69,19 @@ function ProfileMenu(props) {
 }
 
 function Nav(props) {
-  const { token } = props;
+  const { token, setToken, isLogin, setIsLogin } = props;
 
   const [menu, setMenu] = useState("OFF");
   let content = null;
-  if (menu === "ON") content = <ProfileMenu token={token} />;
+  if (menu === "ON")
+    content = (
+      <ProfileMenu
+        token={token}
+        setToken={setToken}
+        isLogin={isLogin}
+        setIsLogin={setIsLogin}
+      />
+    );
 
   return (
     <nav id="nav" className="flexCenter">

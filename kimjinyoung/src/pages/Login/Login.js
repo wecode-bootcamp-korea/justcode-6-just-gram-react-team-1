@@ -6,7 +6,7 @@ import axios from "axios";
 function Login(props) {
   const navigate = useNavigate();
 
-  const { setToken } = props;
+  const { setToken, setIsLogin } = props;
 
   const [active, setActive] = useState(false);
   const [idValue, setIdValue] = useState("");
@@ -29,6 +29,8 @@ function Login(props) {
     }).then((res) => {
       setToken(res.data.access_token);
       localStorage.setItem("token", res.data.access_token);
+      alert("로그인 성공!");
+      setIsLogin(true);
     });
   }
 
