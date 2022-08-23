@@ -1,22 +1,22 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
 
 
-function Findpw() {
+function Join() {
   const navigate = useNavigate();
   const [id, setIdValue] = useState('');
   const [pw, setPwValue] = useState('');
 
   const onSubmit = (e) => {
-    console.log(e.target[0].value)
-    console.log(e.target[1].value);
     e.preventDefault();
-    axios
-      .post("http://auth.jaejun.me:10010/signup", {
-        email: {id},
-        password: {pw},
-      })
+    fetch("http://auth.jaejun.me:10010/signup", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        email: id,
+        password: pw,
+      }),
+    })
       .then((res) => console.log(res))
       .catch((error) => console.log(error));
     navigate('/')
@@ -45,4 +45,4 @@ function Findpw() {
   );
 }
 
-export default Findpw;
+export default Join;

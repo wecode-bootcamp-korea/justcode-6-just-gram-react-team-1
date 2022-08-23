@@ -1,16 +1,16 @@
 import "./App.css";
 import Login from "./pages/Login/Login";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Findpw from "./pages/Login/Findpw";
+import Join from "./pages/Login/Join";
 import Main from "./pages/Main/Main";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Login />} />
-        <Route path="/findpw" element={<Findpw />} />
-        <Route path="/main" element={<Main />} />
+        <Route path='/login' element={<Login />} />
+        <Route path="/join" element={<Join />} />
+        <Route path="/" element={<Main />} />
       </Routes>
     </BrowserRouter>
   );
