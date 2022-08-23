@@ -1,0 +1,49 @@
+{
+  "feedData": [
+    {
+      "feedId": 1,
+      "username": "jiyoung_yim",
+      "feedImages": [
+        {
+          "imageId": 105,
+          "imageUrl": "https://images.unsplash.com/photo-1574482620826-40685ca5ebd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
+        },
+        {
+          "imageId": 106,
+          "imageUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=684&q=80"
+        }
+      ],
+      "content": "건강관리는 중요합니다"
+    },
+    {
+      "feedId": 2,
+      "username": "rainbow",
+      "feedImages": [
+        {
+          "imageId": 107,
+          "imageUrl": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+        },
+        {
+          "imageId": 108,
+          "imageUrl": "https://images.unsplash.com/photo-1609951651556-5334e2706168?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+        }
+      ],
+      "content": "음식 좋아!"
+    },
+    {
+      "feedId": 3,
+      "username": "rainbow",
+      "feedImages": [
+        {
+          "imageId": 109,
+          "imageUrl": "https://images.unsplash.com/photo-1564277287253-934c868e54ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+        },
+        {
+          "imageId": 110,
+          "imageUrl": "https://images.unsplash.com/photo-1573461160327-b450ce3d8e7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+        }
+      ],
+      "content": "Beauty is My Life"
+    }
+  ]
+}

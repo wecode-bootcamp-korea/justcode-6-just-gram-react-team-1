@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Main.scss';
 import Feed from './Feed';
 
-function Main(props) {
+function Main() {
+  const [feeds, setFeeds] = useState([]);
+
+  useEffect(() => {
+    fetch('/data/feeds.json')
+      .then((res) => res.json())
+      .then((data) => {
+        setFeeds(data.feedData);
+      });
+  }, []);
+
   return (
     <div className='main'>
       <nav className='nav'>
@@ -41,7 +51,9 @@ function Main(props) {
       </nav>
 
       <main>
-        <Feed />
+        {feeds.map((feed) => {
+          return <Feed key={feed.feedId} feedData={feed} />;
+        })}
       </main>
     </div>
   );

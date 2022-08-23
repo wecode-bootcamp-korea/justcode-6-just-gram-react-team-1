@@ -1,18 +1,19 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Comment from './Comment';
 
-function Feed() {
+function Feed({ feedData }) {
   // const [comment, setComment] = useState();
   const [id, setId] = useState(1);
   const value = useRef(); // 담을 값
   const [inputState, setInput] = useState('');
 
-  const [commentArray, setCommentArray] = useState([
-    {
-      id: 0,
-      content: '지영님 화이팅!',
-    },
-  ]);
+  const [commentArray, setCommentArray] = useState([]);
+
+  useEffect(() => {
+    fetch('/data/comments.json')
+      .then((res) => res.json())
+      .then((data) => setCommentArray(data.comments));
+  }, []);
 
   const addComment = (e) => {
     e.preventDefault();
@@ -44,7 +45,7 @@ function Feed() {
               id='profile-img'
             />
           </div>
-          <span className='nickname'>roxylife</span>
+          <span className='nickname'>{feedData.username}</span>
         </div>
         <div className='feeds-header_right'>
           <i className='fa-solid fa-ellipsis'></i>
@@ -53,11 +54,15 @@ function Feed() {
 
       <img
         alt='피드 이미지'
-        src='/images/건강.jpg'
+        src={feedData.feedImages[0].imageUrl}
         id='feed-img'
         width='400px'
         height='500px'
       />
+
+      <div>
+        <span>{feedData.content}</span>
+      </div>
 
       <div className='feeds-icons'>
         <div className='feeds-icons_left'>
@@ -85,7 +90,8 @@ function Feed() {
           />
         </div>
         <div>
-          <span className='nickname'>roxylife</span>님 외 26명이 좋아합니다
+          <span className='nickname'>{feedData.username}</span>님 외 26명이
+          좋아합니다
         </div>
       </div>
 
