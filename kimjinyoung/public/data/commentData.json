@@ -1,0 +1,53 @@
+[
+  {
+    "articleId": 1,
+    "comments": [
+      {
+        "id": 1,
+        "isLiked": false,
+        "writer": "kanweyest",
+        "comment": "안녕하세요"
+      },
+      {
+        "id": 2,
+        "isLiked": false,
+        "writer": "kendrick",
+        "comment": "하잉"
+      }
+    ]
+  },
+  {
+    "articleId": 2,
+    "comments": [
+      {
+        "id": 1,
+        "isLiked": false,
+        "writer": "mostpalone",
+        "comment": "great"
+      },
+      {
+        "id": 2,
+        "isLiked": false,
+        "writer": "maek_miller",
+        "comment": "hi"
+      }
+    ]
+  },
+  {
+    "articleId": 3,
+    "comments": [
+      {
+        "id": 1,
+        "isLiked": false,
+        "writer": "990826",
+        "comment": "안녕하세요"
+      },
+      {
+        "id": 2,
+        "isLiked": false,
+        "writer": "thdwodnr",
+        "comment": "하잉"
+      }
+    ]
+  }
+]

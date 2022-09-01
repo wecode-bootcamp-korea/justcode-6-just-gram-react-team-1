@@ -1,0 +1,88 @@
+#nav {
+  justify-content: space-around;
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  position: fixed;
+
+  .navLogo {
+    height: 27.5px;
+    padding-right: 10px;
+    border-right: black solid 3px;
+  }
+
+  .navTitle {
+    padding-left: 10px;
+    font-family: "Lobster", cursive;
+    font-size: 25px;
+  }
+
+  .searchBox {
+    position: relative;
+  }
+
+  .searchInput {
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    background-color: rgb(239, 239, 239);
+    border: none;
+    border-radius: 5px;
+  }
+
+  .searchIcon {
+    height: 17.5px;
+    position: absolute;
+    top: 7px;
+    left: 12px;
+  }
+
+  .navExplore,
+  .navHeart,
+  .navInfo {
+    height: 27.5px;
+    margin: 0 5px;
+  }
+
+  .navProfile {
+    position: relative;
+    height: 27.5px;
+    margin: 0 5px;
+    padding: 1.2px;
+    border-radius: 100%;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+
+  // profile menu //
+
+  .profileMenu {
+    flex-direction: column;
+    position: absolute;
+    right: 32.5px;
+    background-color: white;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 5px;
+    font-size: 16.5px;
+
+    .profileMenuList {
+      display: flex;
+      justify-content: space-between;
+      width: 125px;
+      height: 25px;
+      padding: 15px 20px 15px 17.5px;
+      border-bottom: 1px solid rgb(219, 219, 219);
+      cursor: pointer;
+    }
+
+    .profileMenuList:nth-of-type(4) {
+      justify-content: center;
+      border: none;
+    }
+
+    .menuicons {
+      height: 25px;
+    }
+  }
+}
