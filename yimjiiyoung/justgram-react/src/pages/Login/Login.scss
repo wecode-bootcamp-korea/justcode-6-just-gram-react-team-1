@@ -1,0 +1,57 @@
+.login {
+  height: 100%;
+  .login-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    border: 3px inset lightgrey;
+    padding: 30px;
+    margin: 3vh auto;
+    background-color: white;
+  }
+
+  .justgram-title {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Lobster', cursive;
+    margin-bottom: 80px;
+  }
+
+  #login-form {
+    width: 400px;
+    height: 200px;
+  }
+
+  #input-id,
+  #input-pw {
+    width: 400px;
+    height: 45px;
+    margin: 5px 0;
+    background-color: #f5f5f5;
+    color: grey;
+    border: none;
+  }
+
+  #login-btn {
+    width: 400px;
+    height: 40px;
+    margin: 15px auto;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #bbdefb;
+    color: white;
+    border-radius: 12px;
+  }
+
+  #search-pw {
+    margin-top: 140px;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
